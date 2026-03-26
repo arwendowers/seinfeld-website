@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seinfeld Facts</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #222;
+    }
+
+    .header {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header__title {
+      margin: 0;
+    }
+
+    .nav {
+      margin-top: 10px;
+    }
+
+    .nav__link {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .main {
+      padding: 20px;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .intro__title {
+      margin-bottom: 10px;
+    }
+
+    .intro__text {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .facts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .facts__card {
+      background-color: white;
+      border: 1px solid #ccc;
+      width: 300px;
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .facts__card:hover {
+      transform: scale(1.03);
+    }
+
+    .facts__image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .facts__title {
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .facts {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .facts__card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="header__title">Seinfeld Fan Page</h1>
+    <nav class="nav">
+      <a class="nav__link" href="index.html">Home</a>
+      <a class="nav__link" href="bios.html">Bios</a>
+      <a class="nav__link" href="facts.html">Facts</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="intro">
+      <h2 class="intro__title">Interesting Facts About Seinfeld</h2>
+      <p class="intro__text">
+        Seinfeld is one of the most famous sitcoms of all time. Here are a few fun facts about the show.
+      </p>
+    </section>
+
+    <section class="facts">
+      <article class="facts__card">
+        <img class="facts__image" src="images/jerry.jpg" alt="Jerry Seinfeld">
+        <h3 class="facts__title">It First Aired in 1989</h3>
+        <p class="facts__text">
+          Seinfeld first appeared on TV in 1989 and became very popular in the 1990s.
+        </p>
+      </article>
+
+      <article class="facts__card">
+        <img class="facts__image" src="images/cast.jpg" alt="Seinfeld cast">
+        <h3 class="facts__title">It Was Called a Show About Nothing</h3>
+        <p class="facts__text">
+          The show focused on everyday life, small problems, and funny conversations.
+        </p>
+      </article>
+
+      <article class="facts__card">
+        <img class="facts__image" src="images/apartment.jpg" alt="Jerry's apartment set">
+        <h3 class="facts__title">Jerry's Apartment Is Iconic</h3>
+        <p class="facts__text">
+          Many important scenes happened in Jerry’s apartment, which became a famous TV set.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">Seinfeld Fan Page Project</p>
+  </footer>
+
+</body>
+</html>
