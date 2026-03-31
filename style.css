@@ -1,0 +1,361 @@
+/* Seinfeld Fan Site - Main Stylesheet
+   Assignment 9: CSS Organization | Group A | MMC5277 */
+
+
+/* === CSS Variables === */
+:root {
+  --color-blue:   #007cc2;
+  --color-yellow: #ffd427;
+  --color-red:    #ef1e26;
+  --color-orange: #f5821f;
+  --color-bg:     #f7f3ee;
+  --color-dark:   #2c2522;
+  --color-white:  #ffffff;
+
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body:    'Lato', Arial, sans-serif;
+}
+
+
+/* === Reset === */
+* {
+  box-sizing: border-box;
+  margin:     0;
+  padding:    0;
+}
+
+body {
+  font-family:      var(--font-body);
+  font-size:        1rem;
+  color:            var(--color-dark);
+  background-color: var(--color-bg);
+  line-height:      1.7;
+}
+
+img {
+  max-width: 100%;
+  height:    auto;
+  display:   block;
+}
+
+a {
+  text-decoration: none;
+  color:           inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+
+/* === Animation === */
+@keyframes fadeInUp {
+  from {
+    opacity:   0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity:   1;
+    transform: translateY(0);
+  }
+}
+
+
+/* === Decorative Side Columns === */
+.sidebar {
+  position: fixed;
+  top:      0;
+  height:   100%;
+  width:    90px;
+  display:  flex;
+  z-index:  1;
+}
+
+.sidebar--left {
+  left:           0;
+  flex-direction: row;
+}
+
+.sidebar--right {
+  right:          0;
+  flex-direction: row-reverse;
+}
+
+.sidebar__outer {
+  width:            30px;
+  height:           100%;
+  background-color: var(--color-red);
+}
+
+.sidebar__inner {
+  width:            60px;
+  height:           100%;
+  background-color: var(--color-orange);
+}
+
+
+/* === Site Header === */
+.site-header {
+  position:         sticky;
+  top:              0;
+  z-index:          100;
+  background-color: var(--color-blue);
+  border-top:       5px solid var(--color-orange);
+  border-bottom:    5px solid var(--color-red);
+  text-align:       center;
+  padding:          20px;
+}
+
+.site-header__content {
+  max-width: 960px;
+  margin:    0 auto;
+}
+
+.site-header__logo {
+  max-height: 85px;
+  width:      auto;
+  margin:     0 auto 14px;
+}
+
+
+/* === Navigation - Flexbox === */
+.site-header__nav {
+  margin-top: 10px;
+}
+
+.site-header__nav-list {
+  display:         flex;
+  justify-content: center;
+  align-items:     center;
+  gap:             40px;
+}
+
+.site-header__nav-link {
+  font-family:    var(--font-body);
+  font-size:      0.95rem;
+  font-weight:    700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color:          var(--color-white);
+  padding:        6px 2px;
+  border-bottom:  2px solid transparent;
+  transition:     color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+.site-header__nav-link:hover {
+  color:               var(--color-yellow);
+  border-bottom-color: var(--color-yellow);
+}
+
+.site-header__nav-link--active {
+  color:               var(--color-yellow);
+  border-bottom-color: var(--color-yellow);
+}
+
+
+/* === Main Content === */
+.site-main {
+  padding:   50px 0 70px;
+  animation: fadeInUp 0.8s ease both;
+}
+
+.content-container {
+  max-width: 960px;
+  margin:    0 auto;
+  padding:   0 120px;
+}
+
+
+/* === Content Sections === */
+.content-section {
+  margin-bottom: 60px;
+}
+
+.content-section__heading {
+  font-family:   var(--font-heading);
+  font-size:     2.4rem;
+  font-weight:   700;
+  color:         var(--color-blue);
+  text-align:    left;
+  line-height:   1.25;
+  margin-bottom: 28px;
+}
+
+.content-section__figure {
+  margin-bottom: 28px;
+}
+
+.content-section__image {
+  width:  100%;
+  height: auto;
+}
+
+.content-section__subheading {
+  font-family:   var(--font-heading);
+  font-size:     1.4rem;
+  font-weight:   700;
+  color:         var(--color-dark);
+  text-align:    left;
+  margin-top:    32px;
+  margin-bottom: 16px;
+}
+
+.content-section__body {
+  font-size:     1rem;
+  text-align:    left;
+  line-height:   1.85;
+  margin-bottom: 18px;
+}
+
+.cta-wrapper {
+  text-align: left;
+  margin:     32px 0 16px;
+}
+
+
+/* === Banner Image === */
+.banner-image {
+  margin: 20px 0 40px;
+}
+
+.banner-image__img {
+  width:  100%;
+  height: auto;
+}
+
+
+/* === CTA Button === */
+.cta-button {
+  display:          inline-block;
+  font-family:      var(--font-body);
+  font-size:        1rem;
+  font-weight:      700;
+  text-transform:   uppercase;
+  color:            var(--color-white);
+  background-color: var(--color-red);
+  border:           3px solid var(--color-orange);
+  padding:          16px 48px;
+  border-radius:    3px;
+  cursor:           pointer;
+  transition:       background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--color-orange);
+  border-color:     var(--color-red);
+}
+
+
+/* === Social Posts - Flexbox === */
+.social-posts {
+  display:         flex;
+  justify-content: center;
+  align-items:     flex-start;
+  gap:             24px;
+  flex-wrap:       wrap;
+  margin-top:      24px;
+}
+
+.social-posts__item {
+  flex:      1 1 250px;
+  max-width: 360px;
+}
+
+.social-posts__img {
+  width:  100%;
+  height: auto;
+  border: 1px solid #d8d3ce;
+}
+
+
+/* === Footer === */
+.site-footer {
+  background-color: var(--color-blue);
+  border-top:       5px solid var(--color-red);
+  border-bottom:    5px solid var(--color-orange);
+  text-align:       center;
+  padding:          28px 20px;
+}
+
+.site-footer__content {
+  max-width: 960px;
+  margin:    0 auto;
+}
+
+.site-footer__logo {
+  max-height: 36px;
+  width:      auto;
+  margin:     0 auto 10px;
+}
+
+.site-footer__copyright {
+  font-size: 0.8rem;
+  color:     var(--color-yellow);
+}
+
+
+/* === Tablet (max-width: 1024px) === */
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    width: 55px;
+  }
+
+  .sidebar__outer {
+    width: 18px;
+  }
+
+  .sidebar__inner {
+    width: 37px;
+  }
+
+  .content-container {
+    padding: 0 80px;
+  }
+
+  .site-header__nav-list {
+    gap: 28px;
+  }
+}
+
+
+/* === Mobile (max-width: 600px) === */
+@media screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+
+  .content-container {
+    padding: 0 20px;
+  }
+
+  .site-header__logo {
+    max-height: 55px;
+  }
+
+  .site-header__nav-list {
+    gap: 18px;
+  }
+
+  .site-header__nav-link {
+    font-size: 0.8rem;
+  }
+
+  .content-section__heading {
+    font-size: 1.8rem;
+  }
+
+  .cta-button {
+    padding:   12px 28px;
+    font-size: 0.9rem;
+  }
+
+  .social-posts {
+    flex-direction: column;
+    align-items:    center;
+  }
+
+  .social-posts__item {
+    width:     100%;
+    max-width: 100%;
+  }
+}
