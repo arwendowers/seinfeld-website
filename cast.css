@@ -1,0 +1,13 @@
+/* === CSS Variables === */
+:root {
+    --color-blue: #007cc2;
+    --color-yellow: #ffd427;
+    --color-red: #ef1e26;
+    --color-orange: #f5821f;
+    --color-bg: #f7f3ee;
+    --color-dark: #2c2522;
+    --color-white: #ffffff;
+
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Lato', Arial, sans-serif;
+}

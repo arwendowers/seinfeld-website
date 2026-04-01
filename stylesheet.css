@@ -1,0 +1,220 @@
+/* Seinfeld Fan Site - Main Stylesheet 
+Assignment 9: CSS Organization | Group A | MMC5277 */
+
+
+/* === CSS Variables === */
+:root {
+    --color-blue: #007cc2;
+    --color-yellow: #ffd427;
+    --color-red: #ef1e26;
+    --color-orange: #f5821f;
+    --color-bg: #f7f3ee;
+    --color-dark: #2c2522;
+    --color-white: #ffffff;
+
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Lato', Arial, sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--color-dark);
+    background-color: var(--color-bg);
+    line-height: 1.7;
+    min-height: 100vh;
+    display: flex; 
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+
+/* === Decorative Side Columns === */
+.sidebar {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 90px;
+    display: flex;
+    z-index: 1;
+}
+
+.sidebar--left {
+    left: 0;
+    flex-direction: row;
+}
+
+.sidebar--right {
+    right: 0;
+    flex-direction: row;
+}
+
+.sidebar__outer {
+    width: 30px;
+    height: 100%;
+    background-color: var(--color-red);
+}
+
+.sidebar__inner {
+    width: 60px;
+    height: 100%;
+    background-color: var(--color-orange);
+}
+
+
+/* === Site Header === */
+.site-header {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    z-index: 100;
+    background-color: var(--color-blue);
+    border-top: 5px solid var(--color-orange);
+    border-bottom: 5px solid var(--color-red);
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.site-header__content {
+    width: 100%;
+    margin: 0;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-header__logo {
+    max-height: 70px;
+    width: auto;
+    margin: 0;
+}
+
+
+/* === Navigation === */
+.site-header__nav {
+    margin-top: 0;
+}
+
+.site-header__nav-list {
+    display: flex;
+    gap: 40px;
+}
+
+.site-header__nav-link {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-white);
+    padding: 6px 2px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+.site-header__nav-link:hover {
+    color: var(--color-yellow);
+    border-bottom-color: var(--color-yellow);
+}
+
+
+/* === Footer === */
+.site-footer {
+    background-color: var(--color-blue);
+    border-top: 5px solid var(--color-red);
+    border-bottom: 5px solid var(--color-orange);
+    text-align: center;
+    padding: 28px 20px;
+    margin-top: auto;
+}
+
+.site-footer__content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.site-footer__logo {
+    max-height: 36px;
+    width: auto;
+    margin: 0 auto 10px;
+}
+
+.site-footer__copyright {
+    font-size: 0.8rem;
+    color: var(--color-white);
+}
+
+
+/* === Tablet === */
+@media screen and (max-width: 1024px) {
+    .sidebar {
+        width: 55px;
+    }
+
+    .sidebar__outer {
+        width: 18px;
+    }
+
+    .sidebar__inner {
+        width: 37px;
+    }
+
+    .site-header__nav-list {
+        gap: 28px;
+    }
+}
+
+
+/* === Mobile === */
+@media screen and (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+
+    .site-header__content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .site-header__logo {
+        max-height: 55px;
+        margin-bottom: 10px;
+    }
+
+    .site-header__nav {
+        width: 100%;
+    }
+
+    .site-header__nav-list {
+        gap: 18px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .site-header__nav-link {
+        font-size: 0.8rem;
+    }
+}
