@@ -1,0 +1,169 @@
+.trivia-page {
+    position: relative;
+    z-index: 2;
+    width: min(1000px, calc(100% - 180px));
+    margin: 0 auto;
+    padding: 9rem 0 5rem;
+    font-family: "Lato", sans-serif;
+}
+
+.trivia-hero,
+.trivia-facts {
+    margin-bottom: 3rem;
+    animation: fadeUp 1s ease both;
+}
+
+.trivia-gallery {
+    margin-bottom: 3rem;
+}
+
+.trivia-hero__content,
+.trivia-gallery,
+.trivia-facts {
+    background-color: rgba(255, 255, 255, 0.94);
+    border: 2px solid #1d3557;
+    border-radius: 1rem;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+    padding: 2rem;
+}
+
+.trivia-hero__title,
+.trivia-gallery__heading,
+.trivia-facts__heading {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    color: #1d3557;
+}
+
+.trivia-hero__title {
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.trivia-gallery__heading,
+.trivia-facts__heading {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+
+.trivia-hero__text {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.7;
+    color: #333;
+}
+
+.trivia-gallery__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.trivia-gallery__item {
+    flex: 1 1 220px;
+    max-width: 220px;
+    text-align: center;
+}
+
+/* ✅ removed hover effect */
+.trivia-gallery__image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border: 2px solid #1d3557;
+    border-radius: 1rem;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.trivia-gallery__caption {
+    margin-top: 0.6rem;
+    font-weight: 700;
+    color: #1d3557;
+}
+
+.trivia-facts__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.trivia-card {
+    flex: 1 1 280px;
+    max-width: 300px;
+    background-color: #fff;
+    border: 2px solid #1d3557;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trivia-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 24px rgba(0, 0, 0, 0.16);
+}
+
+.trivia-card__title {
+    margin-bottom: 0.75rem;
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    color: #1d3557;
+}
+
+.trivia-card__text {
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 900px) {
+    .trivia-page {
+        width: min(92%, 100%);
+        padding-top: 8.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .trivia-hero__content,
+    .trivia-gallery,
+    .trivia-facts {
+        padding: 1.5rem;
+    }
+
+    .trivia-card,
+    .trivia-gallery__item {
+        max-width: 100%;
+    }
+
+    .trivia-gallery__item {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .trivia-page {
+        width: 90%;
+        padding-top: 7.5rem;
+    }
+
+    .trivia-gallery__item {
+        flex: 1 1 100%;
+    }
+
+    .trivia-hero__title {
+        font-size: 1.9rem;
+    }
+}
