@@ -13,11 +13,13 @@
 </head>
 <body>
 
-  <div class="sidebar sidebar--left">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div class="sidebar sidebar--left" aria-hidden="true">
   <div class="sidebar__outer"></div>
   <div class="sidebar__inner"></div>
 </div>
-<div class="sidebar sidebar--right">
+<div class="sidebar sidebar--right" aria-hidden="true">
   <div class="sidebar__outer"></div>
   <div class="sidebar__inner"></div>
 </div>
@@ -27,13 +29,13 @@
 
       <img src="Logo.png" alt="Seinfeld" class="site-header__logo">
 
-      <nav class="site-header__nav">
+      <nav class="site-header__nav" aria-label="Main navigation">
         <ul class="site-header__nav-list">
           <li class="site-header__nav-item">
             <a href="index.html" class="site-header__nav-link site-header__nav-link--active">Home</a>
           </li>
           <li class="site-header__nav-item">
-            <a href="cast-bios.html" class="site-header__nav-link">Cast Bios</a>
+            <a href="cast-bios.html" class="site-header__nav-link">Cast</a>
           </li>
           <li class="site-header__nav-item">
             <a href="trivia.html" class="site-header__nav-link">Trivia</a>
@@ -44,7 +46,7 @@
     </div>
   </header>
 
-  <main class="site-main">
+  <main class="site-main" id="main-content">
     <div class="content-container">
 
       <section class="content-section content-section--intro">
@@ -91,9 +93,14 @@
 
       </section>
 
-      <div class="banner-image">
-        <img src="images/seinfeld-banner.jpg" alt="New York City street scene from Seinfeld" class="banner-image__img">
-      </div>
+     <div class="dance-divider" aria-hidden="true">
+  <img src="Dancing1.jpg" alt="">
+  <img src="Dancing4.jpg" alt="">
+  <img src="Dancing5.jpg" alt="">
+  <img src="Dancing2.png" alt="">
+  <img src="Dancing7.webp" alt="">
+  <img src="dancing3.jpeg" alt="">
+</div>
 
       <section class="content-section content-section--streaming">
 
@@ -125,6 +132,15 @@
 
       </section>
 
+      <div class="dance-divider" aria-hidden="true">
+        <img src="cast fun 2.avif" alt="">
+        <img src="castfun6.webp"   alt="">
+        <img src="Castfun1.jpg"    alt="">
+        <img src="castfun5.webp"   alt="">
+        <img src="castfun7.avif"   alt="">
+        <img src="castfun4.jpg"    alt="">
+      </div>
+
       <section class="content-section content-section--genz">
 
         <h2 class="content-section__subheading">Why Gen Z Can't Stop Watching a Show from 1989</h2>
@@ -149,26 +165,23 @@
 
       </section>
 
-      <section class="content-section content-section--social">
+      <section class="social-section">
+        <h2 class="social-section__heading">Seinfeld on Social</h2>
+        <div class="social-section__grid">
 
-        <h2 class="content-section__subheading">Tea Time:<em>Seinfeld</em></h2>
-
-        <div class="social-posts">
-
-          <figure class="social-posts__item">
-            <img src="images/social-post-1.jpg" alt="social media post about Seinfeld" class="social-posts__img">
+          <figure class="social-section__card">
+            <a href="#modal1"><img src="Socialmediapost1.png" alt="Seinfeld social media post 1" class="social-section__img"></a>
           </figure>
 
-          <figure class="social-posts__item">
-            <img src="images/social-post-2.jpg" alt="social media post about Seinfeld" class="social-posts__img">
+          <figure class="social-section__card">
+            <a href="#modal2"><img src="socialmediapost2.png" alt="Seinfeld social media post 2" class="social-section__img"></a>
           </figure>
 
-          <figure class="social-posts__item">
-            <img src="images/social-post-3.jpg" alt="social media post about Seinfeld" class="social-posts__img">
+          <figure class="social-section__card social-section__card--centered">
+            <a href="#modal3"><img src="socialmediapost3.png" alt="Seinfeld social media post 3" class="social-section__img"></a>
           </figure>
 
         </div>
-
       </section>
 
     </div>
@@ -179,10 +192,36 @@
 
       <img src="Logo.png" alt="Seinfeld" class="site-footer__logo">
 
-      <p class="site-footer__copyright">&#169;2026 Copyright: Group A MMC5277</p>
+      <p class="site-footer__copyright">&#169;2026 Group A MMC5277</p>
 
     </div>
   </footer>
+
+
+<!-- Modals -->
+<div id="modal1" class="modal">
+  <a href="#" class="modal__overlay" aria-label="Close"></a>
+  <div class="modal__content">
+    <a href="#" class="modal__close" aria-label="Close">&times;</a>
+    <img src="Socialmediapost1.png" alt="Seinfeld social media post 1">
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <a href="#" class="modal__overlay" aria-label="Close"></a>
+  <div class="modal__content">
+    <a href="#" class="modal__close" aria-label="Close">&times;</a>
+    <img src="socialmediapost2.png" alt="Seinfeld social media post 2">
+  </div>
+</div>
+
+<div id="modal3" class="modal">
+  <a href="#" class="modal__overlay" aria-label="Close"></a>
+  <div class="modal__content">
+    <a href="#" class="modal__close" aria-label="Close">&times;</a>
+    <img src="socialmediapost3.png" alt="Seinfeld social media post 3">
+  </div>
+</div>
 
 </body>
 </html>
