@@ -170,7 +170,6 @@ ul {
 }
 
 
-/* === Content Sections === */
 .content-section {
   margin-bottom: 60px;
 }
@@ -323,7 +322,6 @@ ul {
   transform: scale(1.02);
 }
 
-/* Modal */
 .modal {
   display:         none;
   position:        fixed;
