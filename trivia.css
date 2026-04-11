@@ -21,7 +21,7 @@
 .trivia-gallery,
 .trivia-facts {
     background-color: rgba(255, 255, 255, 0.94);
-    border: 2px solid #1d3557;
+    border: 2px solid #007cc2;
     border-radius: 1rem;
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
     padding: 2rem;
@@ -33,7 +33,7 @@
     margin-bottom: 1rem;
     text-align: center;
     font-family: "Playfair Display", serif;
-    color: #1d3557;
+    color: #007cc2;
 }
 
 .trivia-hero__title {
@@ -71,7 +71,7 @@
     width: 100%;
     height: 220px;
     object-fit: cover;
-    border: 2px solid #1d3557;
+    border: 2px solid #007cc2;
     border-radius: 1rem;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
 }
@@ -79,7 +79,7 @@
 .trivia-gallery__caption {
     margin-top: 0.6rem;
     font-weight: 700;
-    color: #1d3557;
+    color: #007cc2;
 }
 
 .trivia-facts__grid {
@@ -93,7 +93,7 @@
     flex: 1 1 280px;
     max-width: 300px;
     background-color: #fff;
-    border: 2px solid #1d3557;
+    border: 2px solid #007cc2;
     border-radius: 1rem;
     padding: 1.5rem;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
@@ -109,7 +109,7 @@
     margin-bottom: 0.75rem;
     font-family: "Playfair Display", serif;
     font-size: 1.2rem;
-    color: #1d3557;
+    color: #007cc2;
 }
 
 .trivia-card__text {
