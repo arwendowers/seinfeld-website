@@ -6,7 +6,7 @@
   --color-orange: #f5821f;
   --color-bg:     #f7f3ee;
   --color-dark:   #2c2522;
-  --color-white:  #f7f3ee;
+  --color-white:  #ffffff;
 
   --font-heading: 'Playfair Display', Georgia, serif;
   --font-body:    'Lato', Arial, sans-serif;
@@ -86,7 +86,7 @@ ul {
 
 .sidebar--right {
   right:          0;
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 
 .sidebar__outer {
@@ -108,23 +108,28 @@ ul {
   background-color: var(--color-blue);
   border-top:       5px solid var(--color-orange);
   border-bottom:    5px solid var(--color-red);
-  text-align:       center;
-  padding:          20px;
+  display:          flex;
+  flex-direction:   row;
+  padding:          10px 20px;
 }
 
 .site-header__content {
-  max-width: 960px;
-  margin:    0 auto;
+  width:           100%;
+  margin:          0;
+  padding:         0 80px;
+  display:         flex;
+  justify-content: space-between;
+  align-items:     center;
 }
 
 .site-header__logo {
-  max-height: 85px;
+  max-height: 70px;
   width:      auto;
-  margin:     0 auto 14px;
+  margin:     0;
 }
 
 .site-header__nav {
-  margin-top: 10px;
+  margin-top: 0;
 }
 
 .site-header__nav-list {
@@ -378,10 +383,9 @@ ul {
 }
 
 .site-footer__logo {
-  max-height: 24px;
+  max-height: 36px;
   width:      auto;
   margin:     0 auto 10px;
-  opacity:    0.6;
 }
 
 .site-footer__copyright {
