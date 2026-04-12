@@ -156,10 +156,6 @@ ul {
   border-bottom-color: var(--color-yellow);
 }
 
-.site-header__nav-link--active {
-  color:               var(--color-yellow);
-  border-bottom-color: var(--color-yellow);
-}
 
 .site-main {
   padding:   50px 0 70px;
