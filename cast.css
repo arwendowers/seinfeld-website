@@ -547,6 +547,114 @@
     .content__cast-images {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+    .popup__body-text {
+        font-size: 0.8em;
+    }
+
+    #jerry-popup {
+        overflow-y: auto;
+        align-items: flex-start;
+        padding-top: 200px;
+    }
+
+    .jerry-popup__window {
+        width: 500px;
+        height: 400px;
+        padding: 20px;
+        gap: 8px;
+    }
+
+    #george-popup {
+        overflow-y: auto;
+        align-items: flex-start;
+        padding-top: 200px;
+    }
+
+    .george-popup__window {
+        width: 500px;
+        height: 400px;
+        padding: 20px;
+        gap: 8px;
+    }
+
+    #kramer-popup {
+        overflow-y: auto;
+        align-items: flex-start;
+        padding-top: 200px;
+    }
+
+    .kramer-popup__window {
+        width: 500px;
+        height: 400px;
+        padding: 20px;
+        gap: 8px;
+    }
+
+    #elaine-popup {
+        overflow-y: auto;
+        align-items: flex-start;
+        padding-top: 200px;
+    }
+
+    .elaine-popup__window {
+        width: 500px;
+        height: 400px;
+        padding: 20px;
+        gap: 8px;
+    }
+
+    #newman-popup {
+        overflow-y: auto;
+        align-items: flex-start;
+        padding-top: 200px;
+    }
+
+    .newman-popup__window {
+        width: 500px;
+        height: 400px;
+        padding: 20px;
+        gap: 8px;
+    }
+
+    #susan-popup {
+        overflow-y: auto;
+        align-items: flex-start;
+        padding-top: 200px;
+    }
+
+    .susan-popup__window {
+        width: 500px;
+        height: 400px;
+        padding: 20px;
+        gap: 8px;
+    }
+
+    #frank-popup {
+        overflow-y: auto;
+        align-items: flex-start;
+        padding-top: 200px;
+    }
+
+    .frank-popup__window {
+        width: 500px;
+        height: 400px;
+        padding: 20px;
+        gap: 8px;
+    }
+
+    #estelle-popup {
+        overflow-y: auto;
+        align-items: flex-start;
+        padding-top: 200px;
+    }
+
+    .estelle-popup__window {
+        width: 500px;
+        height: 400px;
+        padding: 20px;
+        gap: 8px;
+    }
 }
 
 /* === Mobile === */
@@ -558,6 +666,114 @@
     .content-container {
         padding: 0 50px;
     }
+
+    .popup__body-text {
+        font-size: 0.7em;
+    }
+
+    #jerry-popup {
+        overflow-y: auto;
+        align-items: flex-start;
+        padding-top: 200px;
+    }
+
+    .jerry-popup__window {
+        width: 390px;
+        height: 400px;
+        padding: 20px;
+        gap: 8px;
+    }
+
+    #george-popup {
+        overflow-y: auto;
+        align-items: flex-start;
+        padding-top: 200px;
+    }
+
+    .george-popup__window {
+        width: 390px;
+        height: 400px;
+        padding: 20px;
+        gap: 8px;
+    }
+
+    #kramer-popup {
+        overflow-y: auto;
+        align-items: flex-start;
+        padding-top: 200px;
+    }
+
+    .kramer-popup__window {
+        width: 390px;
+        height: 400px;
+        padding: 20px;
+        gap: 8px;
+    }
+
+    #elaine-popup {
+        overflow-y: auto;
+        align-items: flex-start;
+        padding-top: 200px;
+    }
+
+    .elaine-popup__window {
+        width: 390px;
+        height: 400px;
+        padding: 20px;
+        gap: 8px;
+    }
+
+    #newman-popup {
+        overflow-y: auto;
+        align-items: flex-start;
+        padding-top: 200px;
+    }
+
+    .newman-popup__window {
+        width: 390px;
+        height: 400px;
+        padding: 20px;
+        gap: 8px;
+    }
+
+    #susan-popup {
+        overflow-y: auto;
+        align-items: flex-start;
+        padding-top: 200px;
+    }
+
+    .susan-popup__window {
+        width: 390px;
+        height: 400px;
+        padding: 20px;
+        gap: 8px;
+    }
+
+    #frank-popup {
+        overflow-y: auto;
+        align-items: flex-start;
+        padding-top: 200px;
+    }
+
+    .frank-popup__window {
+        width: 390px;
+        height: 400px;
+        padding: 20px;
+        gap: 8px;
+    }
+
+    #estelle-popup {
+        overflow-y: auto;
+        align-items: flex-start;
+        padding-top: 200px;
+    }
+
+    .estelle-popup__window {
+        width: 390px;
+        height: 400px;
+        padding: 20px;
+        gap: 8px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -567,5 +783,113 @@
 
     .content-container {
         padding: 0 70px;
+    }
+
+    .popup__body-text {
+        font-size: 0.7em;
+    }
+
+    #jerry-popup {
+        overflow-y: auto;
+        align-items: flex-start;
+        padding-top: 200px;
+    }
+
+    .jerry-popup__window {
+        width: 370px;
+        height: 400px;
+        padding: 20px;
+        gap: 5px;
+    }
+
+    #george-popup {
+        overflow-y: auto;
+        align-items: flex-start;
+        padding-top: 200px;
+    }
+
+    .george-popup__window {
+        width: 370px;
+        height: 400px;
+        padding: 20px;
+        gap: 5px;
+    }
+
+    #kramer-popup {
+        overflow-y: auto;
+        align-items: flex-start;
+        padding-top: 200px;
+    }
+
+    .kramer-popup__window {
+        width: 370px;
+        height: 400px;
+        padding: 20px;
+        gap: 5px;
+    }
+
+    #elaine-popup {
+        overflow-y: auto;
+        align-items: flex-start;
+        padding-top: 200px;
+    }
+
+    .elaine-popup__window {
+        width: 370px;
+        height: 400px;
+        padding: 20px;
+        gap: 5px;
+    }
+
+    #newman-popup {
+        overflow-y: auto;
+        align-items: flex-start;
+        padding-top: 200px;
+    }
+
+    .newman-popup__window {
+        width: 370px;
+        height: 400px;
+        padding: 20px;
+        gap: 5px;
+    }
+
+    #susan-popup {
+        overflow-y: auto;
+        align-items: flex-start;
+        padding-top: 200px;
+    }
+
+    .susan-popup__window {
+        width: 370px;
+        height: 400px;
+        padding: 20px;
+        gap: 5px;
+    }
+
+    #frank-popup {
+        overflow-y: auto;
+        align-items: flex-start;
+        padding-top: 200px;
+    }
+
+    .frank-popup__window {
+        width: 370px;
+        height: 400px;
+        padding: 20px;
+        gap: 5px;
+    }
+
+    #estelle-popup {
+        overflow-y: auto;
+        align-items: flex-start;
+        padding-top: 200px;
+    }
+
+    .estelle-popup__window {
+        width: 370px;
+        height: 400px;
+        padding: 20px;
+        gap: 5px;
     }
 }
