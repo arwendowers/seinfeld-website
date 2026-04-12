@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cast of Seinfeld</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="cast.css">
+
+</head>
+<body>
+    <!-- decorative side columns -->
+    <div class="sidebar sidebar--left">
+        <div class="sidebar__outer"></div>
+        <div class="sidebar__inner"></div>
+    </div>
+    <div class="sidebar sidebar--right">
+        <div class="sidebar__inner"></div>
+        <div class="sidebar__outer"></div>
+  </div>
+
+    <!-- header -->
+    <header class="site-header">
+        <div class="site-header__content">
+
+            <a href="index.html">
+                <img src="seinfeld-logo.png" alt="Seinfeld" class="site-header__logo">
+            </a>
+
+            <nav class="site-header__nav">
+                <ul class="site-header__nav-list">
+                    <li class="site-header__nav-item">
+                        <a href="index.html" class="site-header__nav-link">Home</a>
+                    </li>
+                    <li class="site-header__nav-item">
+                        <a href="cast.html" class="site-header__nav-link">Cast</a>
+                    </li>
+                    <li class="site-header__nav-item">
+                        <a href="trivia.html" class="site-header__nav-link">Trivia</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- main content -->
+    <main class="site-main">
+        <div class="content-container">
+
+                <h1 class="content__heading"> The Cast of Seinfeld </h1>
+
+                <!-- cast images -->
+                <div class="content__cast-images">
+                    <figure class="cast-image jerry-image">
+                        <a href="#jerry-popup">
+                            <img src="cast-images/Jerry.png" alt="Jerry Seinfeld">
+                        </a>
+                        <figcaption>
+                            <h2 class="cast-image__character-name">Jerry Seinfeld</h2>
+                            <h3 class="cast-image__actor-name">Jerry Seinfeld</h3>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="cast-image george-image">
+                        <a href="#george-popup">
+                            <img src="cast-images/George.png" alt="George Costanza">
+                        </a>
+                        <figcaption>
+                            <h2 class="cast-image__character-name">George Costanza</h2>
+                            <h3 class="cast-image__actor-name">Jason Alexander</h3>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="cast-image kramer-image">
+                        <a href="#kramer-popup">
+                            <img src="cast-images/Kramer.png" alt="Cosmo Kramer">
+                        </a>
+                        <figcaption>
+                            <h2 class="cast-image__character-name">Cosmo Kramer</h2>
+                            <h3 class="cast-image__actor-name">Michael Richards</h3>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="cast-image elaine-image">
+                        <a href="#elaine-popup">
+                            <img src="cast-images/Elaine.png" alt="Elaine Benes">
+                        </a>
+                        <figcaption>
+                            <h2 class="cast-image__character-name">Elaine Benes</h2>
+                            <h3 class="cast-image__actor-name">Julia Louis-Dreyfus</h3>
+                        </figcaption>
+                    </figure>
+                    
+                    <figure class="cast-image newman-image">
+                        <a href="#newman-popup">
+                            <img src="cast-images/Newman.png" alt="Newman">
+                        </a>
+                        <figcaption>
+                            <h2 class="cast-image__character-name">Newman</h2>
+                            <h3 class="cast-image__actor-name">Wayne Knight</h3>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="cast-image susan-image">
+                        <a href="#susan-popup">
+                            <img src="cast-images/Susan.png" alt="Susan Ross">
+                        </a>
+                        <figcaption>
+                            <h2 class="cast-image__character-name">Susan Ross</h2>
+                            <h3 class="cast-image__actor-name">Heidi Swedberg</h3>
+                        </figcaption>
+                    </figure>
+                    
+                    <figure class="cast-image frank-image">
+                        <a href="#frank-popup">
+                            <img src="cast-images/Frank.png" alt="Frank Costanza">
+                        </a>
+                        <figcaption>
+                            <h2 class="cast-image__character-name">Frank Costanza</h2>
+                            <h3 class="cast-image__actor-name">Jerry Stiller</h3>
+                        </figcaption>
+                    </figure>
+                    
+                    <figure class="cast-image estelle-image">
+                        <a href="#estelle-popup">
+                            <img src="cast-images/Estelle.png" alt="Estelle Costanza">
+                        </a>
+                        <figcaption>
+                            <h2 class="cast-image__character-name">Estelle Costanza</h2>
+                            <h3 class="cast-image__actor-name">Estelle Harris</h3>
+                        </figcaption>
+                    </figure>
+                </div>
+        </div>
+    </main>
+
+    <div class="cast-popups">
+        <!-- cast pop-ups -->
+            <div id="jerry-popup">
+                <div class="jerry-popup__window">
+                    <a class="jerry-popup__close" href="#close">&times;</a>
+                    <img src="cast-images/Jerry.png" alt="Jerry Seinfeld" class="popup__image">
+                    <h2 class="popup__character-name">Jerry Seinfeld</h2>
+                    <h3 class="popup__actor-name">Jerry Seinfeld</h3>
+                    <p class="popup__body-text">Playing a fictional version of himself, Jerry Seinfeld portrays the title character of the show. He’s an egocentric and indifferent stand-up comedian living in Manhattan, who is the voice of reason among his friends: George, Elaine, and Kramer.<br><br>He is very observational, often sarcastically commenting on his friends’ quirky habits. He is also known for dating many women, often breaking up with them quickly for insignificant reasons.</p> 
+                    <p class="popup__body-text"></p>
+                </div>
+            </div>
+
+            <div id="george-popup">
+                <div class="george-popup__window">
+                    <a class="george-popup__close" href="#close">&times;</a>
+                    <img src="cast-images/George.png" alt="George Costanza" class="popup__image">
+                    <h2 class="popup__character-name">George Costanza</h2>
+                    <h3 class="popup__actor-name">Jason Alexander</h3>
+                    <p class="popup__body-text">George is a neurotic and self-loathing man whose insecurities lead him to self-sabotaging his relationships and jobs, which he rotates through regularly. He's been friends with Jerry since junior high. He is also friends with Elaine and Kramer.<br><br>A lot of his reprehensible actions result from him taking the advice of others too seriously. The character of George is based on a mix of Larry David—Seinfeld’s co-creator—and Jerry Seinfeld’s real-life childhood friend Michael Costanza.</p> 
+                </div>
+            </div>
+
+            <div id="kramer-popup">
+                <div class="kramer-popup__window">
+                    <a class="kramer-popup__close" href="#close">&times;</a>
+                    <img src="cast-images/Kramer.png" alt="Cosmo Kramer" class="popup__image">
+                    <h2 class="popup__character-name">Cosmo Kramer</h2>
+                    <h3 class="popup__actor-name">Michael Richards</h3>
+                    <p class="popup__body-text">Usually referred to by his surname, Kramer is an eccentric man that lives across the hall from Jerry. He is friends with Jerry, George, and Elaine, and he is known for his physical comedy, bluntness, and tendancy to barge into Jerry's home.<br><br>Kramer is perpetually unemployed, instead pursuing random gigs or inventions, and yet, he always has money somehow. His first name, Cosmo, wasn’t revealed until the sixth season.
+                </div>
+            </div>
+
+            <div id="elaine-popup">
+                <div class="elaine-popup__window">
+                    <a class="elaine-popup__close" href="#close">&times;</a>
+                    <img src="cast-images/Elaine.png" alt="Elaine Benes" class="popup__image">
+                    <h2 class="popup__character-name">Elaine Benes</h2>
+                    <h3 class="popup__actor-name">Julia Louis-Dreyfus</h3>
+                    <p class="popup__body-text">Elaine is an outspoken and intelligent woman who tends to be apathetic and ruthless towards others. She is Jerry’s ex-girlfriend, though they remained friends after breaking up. She is also friends with George and Kramer.<br><br>She is often unlucky in her relationships and jobs, usually coming into conflict with inadequate boyfriends or the arbitrary demands of her eccentric employers. She seems to be bitter about the state her life is in, so she can seem selfish to others.
+                </div>
+            </div>
+
+            <div id="newman-popup">
+                <div class="newman-popup__window">
+                    <a class="newman-popup__close" href="#close">&times;</a>
+                    <img src="cast-images/Newman.png" alt="Newman" class="popup__image">
+                    <h2 class="popup__character-name">Newman</h2>
+                    <h3 class="popup__actor-name">Wayne Knight</h3>
+                    <p class="popup__body-text">Newman is a cunning and vengeful U.S mail carrier who serves as Jerry’s arch-nemesis. He lives in Jerry’s apartment building and is also good friends with Kramer. He is a frequent collaborator in Kramer’s elaborate and bizarre schemes.<br><br>He often speaks in a humorously sinister tone, and greets Jerry with a snide "Hello, Jerry". The reason for the animosity between Newman and Jerry is never revealed, but Newman never misses a chance to get Jerry in trouble.</p>
+                </div>
+            </div>
+
+            <div id="susan-popup">
+                <div class="susan-popup__window">
+                    <a class="susan-popup__close" href="#close">&times;</a>
+                    <img src="cast-images/Susan.png" alt="Susan Ross" class="popup__image">
+                    <h2 class="popup__character-name">Susan Ross</h2>
+                    <h3 class="popup__actor-name">Heidi Swedberg</h3>
+                    <p class="popup__body-text">Susan was George’s girlfriend, and later fiancée. She worked as an NBC executive, but their relationship ultimately got her fired, among other disastrous outcomes resulting from dating George.<br><br>Susan and George dated on-again off-again, eventually becoming engaged after Susan dated a woman for a short time. Susan accidentally died as the result of George buying cheap wedding invitation envelopes with toxic glue that she licked.</p> 
+                </div>
+            </div>
+
+            <div id="frank-popup">
+                <div class="frank-popup__window">
+                    <a class="frank-popup__close" href="#close">&times;</a>
+                    <img src="cast-images/Frank.png" alt="Frank Costanza" class="popup__image">
+                    <h2 class="popup__character-name">Frank Costanza</h2>
+                    <h3 class="popup__actor-name">Jerry Stiller</h3>
+                    <p class="popup__body-text">Frank is George’s father and the husband of Estelle Costanza. He is an Italian man that is hot-tempered and eccentric. Estelle and him are known for yelling at each other while having normal conversations. He invented an alternative holiday to Christmas, Festivus, as a reaction to the commercialism of Christmas.</p> 
+                </div>
+            </div>
+
+            <div id="estelle-popup">
+                <div class="estelle-popup__window">
+                    <a class="estelle-popup__close" href="#close">&times;</a>
+                    <img src="cast-images/Estelle.png" alt="Estelle Costanza" class="popup__image">
+                    <h2 class="popup__character-name">Estelle Costanza</h2>
+                    <h3 class="popup__actor-name">Estelle Harris</h3>
+                    <p class="popup__body-text">Estelle is George’s mother and the wife of Frank Costanza. She is obnoxious, melodramatic, and overbearing, known for constantly squabbling with Frank and George. She is contentious, but she’s also the closest thing to reason in the Costanza household. George also claims she has never laughed, ever.</p> 
+                </div>
+            </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="site-footer">
+        <div class="site-footer__content">
+
+            <p class="site-footer__copyright">&#169; 2026 MMC5277 Group A</p>
+
+        </div>
+    </footer>
+</body>
+</html>
