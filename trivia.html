@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seinfeld Trivia</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="cast.css">
+    <link rel="stylesheet" href="trivia.css">
+</head>
+<body>
+    <!-- decorative side columns -->
+    <div class="sidebar sidebar--left">
+        <div class="sidebar__outer"></div>
+        <div class="sidebar__inner"></div>
+    </div>
+
+    <div class="sidebar sidebar--right">
+        <div class="sidebar__inner"></div>
+        <div class="sidebar__outer"></div>
+    </div>
+
+    <!-- header -->
+    <header class="site-header">
+        <div class="site-header__content">
+            <a href="index.html">
+                <img src="seinfeld-logo.png" alt="Seinfeld logo" class="site-header__logo">
+            </a>
+
+            <nav class="site-header__nav" aria-label="Main navigation">
+                <ul class="site-header__nav-list">
+                    <li class="site-header__nav-item">
+                        <a href="index.html" class="site-header__nav-link">Home</a>
+                    </li>
+                    <li class="site-header__nav-item">
+                        <a href="cast.html" class="site-header__nav-link">Cast</a>
+                    </li>
+                    <li class="site-header__nav-item">
+                        <a href="trivia.html" class="site-header__nav-link site-header__nav-link--active">Trivia</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="trivia-page">
+        <section class="trivia-hero">
+            <div class="trivia-hero__content">
+                <h1 class="trivia-hero__title">Interesting Facts About Seinfeld</h1>
+                <p class="trivia-hero__text">
+                    Seinfeld became one of the most iconic sitcoms of all time by turning ordinary daily life into comedy.
+                    Here are ten fun facts and memorable details about the legendary show.
+                </p>
+            </div>
+        </section>
+
+        <section class="trivia-gallery" aria-labelledby="gallery-heading">
+            <div class="trivia-gallery__grid">
+                <figure class="trivia-gallery__item">
+                    <img src="jerry.jpg" alt="Jerry Seinfeld smiling" class="trivia-gallery__image">
+                </figure>
+
+                <figure class="trivia-gallery__item">
+                    <img src="cast.jpg" alt="Main cast of Seinfeld" class="trivia-gallery__image">
+                </figure>
+            </div>
+        </section>
+
+        <section class="trivia-facts" aria-labelledby="trivia-facts-heading">
+            <h2 id="trivia-facts-heading" class="trivia-facts__heading">Intersting Seinfeld Facts</h2>
+
+            <div class="trivia-facts__grid">
+                <article class="trivia-card">
+                    <h3 class="trivia-card__title">1. It Was First Called The Seinfeld Chronicles</h3>
+                    <p class="trivia-card__text">
+                        Before it became simply Seinfeld, the show started with a different title during its early development.
+                    </p>
+                </article>
+
+                <article class="trivia-card">
+                    <h3 class="trivia-card__title">2. It Was First Called <em>The Seinfeld Chronicles</em></h3>
+                    <p class="trivia-card__text">
+                        Before it became simply Seinfeld, the show started with a different title.
+                    </p>
+                </article>
+
+                <article class="trivia-card">
+                    <h3 class="trivia-card__title">3. It Became Known as a Show About Nothing</h3>
+                    <p class="trivia-card__text">
+                        The show was famous for making comedy out of everyday conversations.
+                    </p>
+                </article>
+
+                <article class="trivia-card">
+                    <h3 class="trivia-card__title">4. Jerry Played a Version of Himself</h3>
+                    <p class="trivia-card__text">
+                        Jerry Seinfeld’s character reflected his real-life career as a stand-up comedian.
+                    </p>
+                </article>
+
+                <article class="trivia-card">
+                    <h3 class="trivia-card__title">5. Larry David Co-Created the Series</h3>
+                    <p class="trivia-card__text">
+                        Larry David worked with Jerry Seinfeld to create the show’s sharp humor.
+                    </p>
+                </article>
+
+                <article class="trivia-card">
+                    <h3 class="trivia-card__title">6. The Puffy Shirt is in a Museum</h3>
+                    <p class="trivia-card__text">
+                        The shirt from the Season 5 episode “The Puffy Shirt” is housed in the Smithsonian National Museum.
+                    </p>
+                </article>
+
+                <article class="trivia-card">
+                    <h3 class="trivia-card__title">7. “Kramer” Wasn’t In The Pilot</h3>
+                    <p class="trivia-card__text">
+                        In the pilot episode, Kramer’s name was actually “Kessler” to avoid legal issues with Kramer’s inspiration, Kenny Kramer.
+                    </p>
+                </article>
+
+                <article class="trivia-card">
+                    <h3 class="trivia-card__title">8. Pop Culture Icons</h3>
+                    <p class="trivia-card__text">
+                        Jerry, George, Elaine, and Kramer became some of the most recognizable sitcom characters ever.
+                    </p>
+                </article>
+
+                <article class="trivia-card">
+                    <h3 class="trivia-card__title">9. Elaine’s New Yorker Cartoon Published</h3>
+                    <p class="trivia-card__text">
+                        The cartoon Elaine submitted to The New Yorker in “The Cartoon” was actually published by the real-life magazine.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="site-footer">
+        <div class="site-footer__content">
+            <p class="site-footer__copyright">&#169; 2026 MMC5277 Group A</p>
+        </div>
+    </footer>
+</body>
+</html>
